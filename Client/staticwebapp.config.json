@@ -1,11 +1,9 @@
 {
-	"routes": [{
-		"route": "/members",
-		"allowedRoles": ["authenticated, members"],
-		"headers": {
-			"Cache-Control": "no-store"
-		}
-	}],
+	"route": "/members",
+	"allowedRoles": ["authenticated, members"],
+	"headers": {
+		"Cache-Control": "no-store"
+	},
 	"networking": {
 		"allowedIpRanges": ["AzureFrontDoor.Backend"]
 	},
