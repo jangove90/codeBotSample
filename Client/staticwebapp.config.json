@@ -1,11 +1,20 @@
-"networking": {
-  "allowedIpRanges": ["AzureFrontDoor.Backend"]
-}
-"forwardingGateway": {
-  "requiredHeaders": {
-    "X-Azure-FDID" : "91e33c11-7dba-46b5-9d38-9278c0cc4336"
-  },
-  "allowedForwardedHosts": [
-    "blazorapp-epg5behefdayducn.z01.azurefd.net"
-  ]
+{
+	"routes": [{
+		"route": "/member",
+		"allowedRoles": ["authenticated,members"],
+		"headers": {
+			"Cache-Control": "no-store"
+		}
+	}],
+	"networking": {
+		"allowedIpRanges": ["AzureFrontDoor.Backend"]
+	},
+	"forwardingGateway": {
+		"requiredHeaders": {
+			"X-Azure-FDID": "91e33c11-7dba-46b5-9d38-9278c0cc4336"
+		},
+		"allowedForwardedHosts": [
+			"blazorapp-epg5behefdayducn.z01.azurefd.net"
+		]
+	}
 }
