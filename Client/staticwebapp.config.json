@@ -1,13 +1,4 @@
 {
-	"routes":[
-	{
-	"route": "/members",
-	"allowedRoles": ["authenticated"]
-	},
-	{
-	"route":"/*",
-	"allowedRoles":["specialRoles"]
-	}],
 	"headers": {
 		"Cache-Control": "no-store"
 	},
