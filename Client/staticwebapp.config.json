@@ -7,10 +7,10 @@
 	},
 	"forwardingGateway": {
 		"requiredHeaders": {
-			"X-Azure-FDID": "e7cd5897-60df-47c3-8cda-17ca2d212610"
+			"X-Azure-FDID": "50959ee1-e030-44dc-a165-1a0936989f0b"
 		},
 		"allowedForwardedHosts": [
-			"blazorapp-epg5behefdayducn.z01.azurefd.net"
+			"blazorapp.azurefd.net"
 		]
 	}
 }
