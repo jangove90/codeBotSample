@@ -3,7 +3,10 @@
 		"Cache-Control": "no-store"
 	},
 	"networking": {
-		"allowedIpRanges": ["AzureFrontDoor.Backend"]
+		"allowedIpRanges": [
+			"AzureFrontDoor.Backend",
+			"137.117.200.39"
+		]
 	},
 	"forwardingGateway": {
 		"requiredHeaders": {
