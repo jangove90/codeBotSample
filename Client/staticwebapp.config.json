@@ -1,0 +1,19 @@
+{
+	"headers": {
+		"Cache-Control": "no-store"
+	},
+	"networking": {
+		"allowedIpRanges": [
+			"AzureFrontDoor.Backend",
+			"10.1.3.0/24"
+		]
+	},
+	"forwardingGateway": {
+		"requiredHeaders": {
+			"X-Azure-FDID": "50959ee1-e030-44dc-a165-1a0936989f0b"
+		},
+		"allowedForwardedHosts": [
+			"blazorapp.azurefd.net"
+		]
+	}
+}
